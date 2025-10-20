@@ -1,0 +1,105 @@
+/* Sección de servicios */
+.services-section {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+/* Tarjetas con fondo translúcido */
+.service-card {
+    width: 30%;
+    height: 300px;
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-decoration: none; /* Eliminar subrayado */
+    position: relative;
+}
+
+/* Fondo translúcido (como cortina) */
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(2, 20, 37, 0.76); /* Fondo negro semi-transparente */
+    border-radius: 10px;
+    z-index: 1; /* Asegura que esté encima de la imagen pero debajo del contenido */
+}
+
+/* Fondos de las tarjetas con imagen */
+.service-card:nth-child(1) {
+    background-image: url('../imagenes/services/instalacion.jpg');
+}
+
+.service-card:nth-child(2) {
+    background-image: url('../imagenes/services/tablero_electrico.jpg');
+}
+
+.service-card:nth-child(3) {
+    background-image: url('../imagenes/services/tomacorriente.jpg');
+}
+
+.service-card:nth-child(4) {
+    background-image: url('../imagenes/services/interruptor-luminarias.jpg'); 
+}
+
+.service-card:nth-child(5) {
+    background-image: url('../imagenes/services/mantenimiento.jpg'); 
+}
+
+.service-card:nth-child(6) {
+    background-image: url('../imagenes/services/electrobombas.jpg'); /
+}
+
+.service-card:nth-child(7) {
+    background-image: url('../imagenes/services/therma.jpg'); 
+}
+
+
+/* Estilo del contenido dentro de la tarjeta */
+.service-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra para que el texto se lea mejor */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2; /* Asegura que el contenido esté encima de la capa translúcida */
+}
+
+.service-card h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos en pantallas pequeñas */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

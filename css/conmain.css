@@ -1,0 +1,237 @@
+.concejo__subtitulo{
+    width: 90%;
+    margin: auto;
+    padding-left: 2em;
+    background: linear-gradient(150deg, #071822, #3f87a6, #071822);
+    box-shadow: 7px 10px 10px #071822;
+    border-top: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.concejo{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.concejo__picture{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+}
+
+.concejo__parrafo{
+    margin: 0 auto;
+    font-weight: normal;
+    padding: 10px; 
+    border: 2px solid #071822;
+    border-radius: 30px 0px;
+    background: white;
+}
+
+.regidor__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.regidor__item{
+    width: 95%;
+    margin: 0 auto;
+    background: #EEEEEE;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.regidor__persona{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.regidor__img{
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid white;
+    margin-right: 30px;
+}
+
+.regidor__titulo{
+    color: #063254;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.regidor__nombre{
+    color: #7a7a7a;
+    font-weight: 700;
+}
+
+.regidor__email{
+    color: black;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+/*contacto*/
+
+.contacto{
+    background: #071822;
+}
+
+.contacto__grid{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contacto__item{
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 25px;
+    margin-bottom: 50px;
+}
+
+.contacto__img{
+    width: 155px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.contacto__titulo{
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contacto__links{
+    margin-top: 20px;
+    list-style: none;
+    color: white;
+    font-weight: 300;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.contacto__links a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px #7a7a7a solid;
+}
+
+.contacto__links li{
+    padding: 7px;
+}
+
+@media screen and (max-width: 840px){
+    .concejo{
+        grid-template-columns: 1fr;
+    }
+
+    .concejo__parrafo{
+        font-size: 0.85rem;
+        text-align: center;
+        padding-bottom: 30px;
+        background: 0;
+        border: 0;
+    }
+
+    .concejo__picture{
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        border-radius: 5px;
+        box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    }
+
+    .regidor__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .regidor__item{
+        margin-bottom: 30px;
+    }
+
+    .contacto__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contacto__item{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .regidor__grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .subtitulo{
+        margin-bottom: 20px;
+    }
+
+    .regidor__item{
+        padding: 30px 15px;
+    }
+
+    .regidor__persona{
+        flex-direction: column;
+    }
+
+    .regidor__titulo{
+        text-align: center;
+    }
+
+    .regidor__img{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .regidor__email{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .contacto__grid{
+        grid-template-columns: 1fr;
+    }
+
+    .contacto__item{
+        padding: 10px;
+    }
+
+    .contacto__img{
+        margin: auto;
+        display: flex;
+    }
+
+    .contacto__titulo{
+        text-align: center;
+    }
+
+    .contacto__persona{
+        flex-direction: column;
+    }
+
+    .contacto__links{
+        text-align: center;
+    }
+}

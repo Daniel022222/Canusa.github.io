@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="icon" href="../imagenes/icono.png" type="image/png"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/banner.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/nosotros.css">
+    <link rel="stylesheet" type="text/css" href="../css/chabot.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/scroll.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="top-bar">
+            <div class="top-bar__logo">
+                <a href="#">
+                    <img src="../imagenes/logo.png" alt="Logo Canusa">
+                </a>
+            </div>
+            <!-- El buscador solo visible en escritorio -->
+            <div class="top-bar__search top-bar__search--desktop">
+                <input type="text" id="search-input-desktop" placeholder="Buscar servicios" onkeyup="filterServices('desktop')">
+                <button><i class="fas fa-search"></i></button>
+                <ul id="service-list-desktop" class="service-list"></ul>
+            </div>
+            <div class="top-bar__contact">
+                <span><i class="fas fa-phone"></i> +51 964 576 346</span>
+            </div>
+            <div class="menu__hamburguer">
+                <img src="../assets/menu.svg" class="menu__img">
+            </div>
+        </div>
+    
+        <nav class="menu">
+            <!-- Buscador duplicado solo para móvil -->
+            <div class="top-bar__search top-bar__search--mobile">
+                <input type="text" id="search-input-mobile" placeholder="Buscar servicios" onkeyup="filterServices('mobile')">
+                <button><i class="fas fa-search"></i></button>
+                <ul id="service-list-mobile" class="service-list"></ul>
+            </div>
+        
+            <section class="menu__container">
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="../index.html" class="menu__link"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../nosotros/nosotros.html" class="menu__link"><i class="fas fa-users"></i> Nosotros</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../servicios.html" class="menu__link"><i class="fas fa-briefcase"></i> Servicios</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../contacto.html" class="menu__link"><i class="fas fa-envelope"></i> Contacto</a>
+                    </li>
+                </ul>
+            </section>
+        
+            <!-- Redes sociales solo para móvil -->
+            <div class="menu__social">
+                <a href="https://www.facebook.com/share/BrAu56gfNhEyaono/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube" target="_blank"></i></a>
+                <a href="https://wa.me/987654321" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </nav>        
+    </div>       
+
+    <section class="banner_us">
+        <div class="banner__content_us">
+            <h1 class="banner__title_us">NOSOTROS</h1>
+            <p class="banner__subtitle_us">INSTALACIONES ELÉCTRICAS</p>
+            <a href="https://wa.me/987654321" class="banner__button_us" target="_blank">CONTÁCTENOS</a>
+        </div>
+    </section>
+
+    <section id="historia">
+        <div class="container-historia">
+            <div class="historia__left">
+                <img src="../imagenes/logo.png" alt="Logo de la empresa" class="historia__img">
+            </div>
+            <div class="historia__right">
+                <h2>Nuestra Historia</h2>
+                <p>CANUSA fue fundada en 1997 por Juan Freddy Castro Núñez, quien comenzó ofreciendo servicios de instalaciones eléctricas a familiares y amigos. Desde el inicio, su dedicación y compromiso con la calidad y la atención al cliente le permitieron ganar la confianza de su comunidad, lo que rápidamente le permitió expandir su clientela.
+                    A lo largo de los años, la reputación de CANUSA creció, consolidándose como un referente local en el sector de instalaciones eléctricas. En el 2024, la empresa dio un paso importante al reforzar su presencia digital, lanzando su página web y estableciendo perfiles en redes sociales. Esto permitió a CANUSA conectar de manera más directa con sus clientes, brindando soluciones eléctricas de alta calidad y un servicio aún más cercano y accesible.</p>
+                <p>Hoy en día, CANUSA continúa con su misión de ofrecer servicios eléctricos confiables, manteniendo siempre su compromiso con la calidad, la puntualidad y la satisfacción de sus clientes.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="mision-vision">
+        <div class="container-mision">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <!-- Ícono de Font Awesome para Misión -->
+                        <div class="card-content">
+                            <i class="fas fa-bullseye card-icon"></i>
+                            <h2>Misión</h2>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Proporcionar servicios eléctricos de alta calidad y seguridad, garantizando la satisfacción del cliente y contribuyendo al bienestar de la comunidad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <!-- Ícono de Font Awesome para Visión -->
+                        <div class="card-content">
+                            <i class="fas fa-eye card-icon"></i>
+                            <h2>Visión</h2>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>Convertirnos en la empresa líder en servicios eléctricos en nuestra región, reconocida por nuestra excelencia y compromiso con la innovación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="valores">
+        <div class="container">
+            <!-- Columna de imagen -->
+            <div class="valores-left">
+                <img src="../imagenes/us05.jpg" alt="Imagen representativa de valores">
+            </div>
+    
+            <!-- Columna de valores -->
+            <div class="valores-right">
+                <h2>Nuestros Valores</h2>
+                <div class="valores-grid">
+                    <div class="valor-item" style="background-color: #E3F2FD;">
+                        <i class="fas fa-award" aria-hidden="true" style="font-size: 40px; color: #002659; margin-bottom: 10px;"></i>
+                        <h3>Compromiso con la calidad</h3>
+                        <p>En CANUSA, nos aseguramos de ofrecer instalaciones eléctricas de la más alta calidad, garantizando que cada trabajo se realice con precisión y siguiendo los más altos estándares del sector.</p>
+                    </div>
+                    <div class="valor-item" style="background-color: #FFEBEE;">
+                        <i class="fas fa-handshake" aria-hidden="true" style="font-size: 40px; color: #002659; margin-bottom: 10px;"></i>
+                        <h3>Honestidad y transparencia</h3>
+                        <p>Creemos que la confianza es la base de cualquier relación. Por eso, siempre actuamos con honestidad y transparencia en todos nuestros proyectos, asegurando que nuestros clientes estén completamente informados.</p>
+                    </div>
+                    <div class="valor-item" style="background-color: #E8F5E9;">
+                        <i class="fas fa-leaf" aria-hidden="true" style="font-size: 40px; color: #002659; margin-bottom: 10px;"></i>
+                        <h3>Responsabilidad ambiental</h3>
+                        <p>Estamos comprometidos con la sostenibilidad. Implementamos prácticas responsables y soluciones energéticas eficientes que respetan el medio ambiente y ayudan a nuestros clientes a reducir su huella ecológica.</p>
+                    </div>
+                    <div class="valor-item" style="background-color: #FFF3E0;">
+                        <i class="fas fa-user-friends" aria-hidden="true" style="font-size: 40px; color: #002659; margin-bottom: 10px;"></i>
+                        <h3>Atención al cliente excepcional</h3>
+                        <p>En CANUSA, cada cliente es importante. Nos aseguramos de ofrecer un servicio personalizado, brindando atención al detalle y resolviendo cualquier duda o inconveniente de manera rápida y eficaz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="contact-btn">
+        <div class="message-icon">
+           <img src="../imagenes/contacto/mensaje.png" alt="Mensaje">
+        </div>
+        <div class="contact-options">
+           <a href="https://wa.me/987654321" target="_blank">
+              <img src="../imagenes/contacto/whatsapp.png" alt="WhatsApp">
+           </a>
+           <a href="https://m.me/Canusa - Instalaciónes Eléctricas " target="_blank">
+              <img src="../imagenes/contacto/messenger.png" alt="Messenger">
+           </a>
+        </div>
+     </div>
+    
+    <!-- FOOTER -->
+
+   <footer class="footer" id="footer">
+    <div class="footer__container">
+        <!-- Logo e Información de la Empresa -->
+        <div class="footer__column">
+            <a href="#" class="footer__logo">
+                <img src="../imagenes/logo.png" alt="Logo Canusa">
+            </a>
+            <p class="footer__description">
+                En <strong>CANUSA</strong>, nos comprometemos a ofrecer servicios eléctricos confiables con soluciones innovadoras que mejoran la calidad de vida.
+            </p>
+        </div>
+
+        <!-- Navegación -->
+        <div class="footer__column">
+            <h3 class="footer__title">Enlaces</h3>
+            <ul class="footer__list">
+                <li><a href="../index.html" class="footer__link">Inicio</a></li>
+                <li><a href="../nosotros/nosotros.html" class="footer__link">Nosotros</a></li>
+                <li><a href="../servicios.html" class="footer__link">Servicios</a></li>
+                <li><a href="../contacto.html" class="footer__link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Información de Contacto -->
+        <div class="footer__column">
+            <h3 class="footer__title">Contáctenos</h3>
+            <ul class="footer__list">
+                <li><i class="fas fa-phone"></i> +51 964 576 346</li>
+                <li><i class="fas fa-envelope"></i> canusa145@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Carretera central, 422, San Agustín de Cajas, Perú</li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociales y Métodos de Pago -->
+        <div class="footer__column">
+            <h3 class="footer__title">Síguenos</h3>
+            <div class="footer__social-icons">
+                <a href="https://www.facebook.com/share/BrAu56gfNhEyaono/" target="_blank" class="footer__social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank" class="footer__social-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://wa.me/987654321" target="_blank" class="footer__social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <h3 class="footer__title">Métodos de Pago</h3>
+            <div class="footer__payment-icons">
+                <img src="../imagenes/contacto/bcp.png" alt="BCP" class="footer__payment-bcp">
+                <img src="../imagenes/contacto/yape.png" alt="Yape" class="footer__payment-yape">
+            </div>
+        </div>
+    </div>
+
+    <!-- Derechos Reservados -->
+    <div class="footer__bottom">
+        <p>&copy; 2024 CANUSA. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    
+
+    
+
+    <script src="../js/app.js"></script>
+    <script src="../js/banner.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/nosotros.js"></script>
+    <script src="../js/chatbot.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+</body>
+</html>

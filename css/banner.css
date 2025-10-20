@@ -1,0 +1,472 @@
+.banner {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white; 
+	transition: background-image 1.5s ease-in-out;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.banner__content {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }      
+    10% { opacity: 0; }     
+    20% { opacity: 1; }     
+    30% { opacity: 0; }     
+    60% { opacity: 1; }     
+    100% { opacity: 1; }    
+}
+
+.banner__title {
+    font-size: 130px;
+    letter-spacing: 5px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    animation: flicker 4.5s 1 forwards;
+    text-shadow: 0 0 10px #FAB702, 0 0 20px #ffd86e;
+
+}
+
+.banner__subtitle {
+    font-size: 30px; 
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.banner__button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.banner__button:hover {
+    background-color: #112d4e; 
+    border-color: transparent; 
+}
+
+@media (max-width: 840px) {
+	.banner__title {
+		font-size: 60px;
+        margin-top: 80px;
+	}
+
+	.banner__subtitle {
+		font-size: 15px; 
+	}
+
+    .banner__button {
+        padding: 10px 25px;
+    }
+}
+
+
+/******** SERVICIOS B *********/ 
+
+
+.banner_svc {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white; 
+    transition: background-image 1.5s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); /* Corte en punta en la parte inferior */
+}
+
+.banner_svc::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.banner__content_svc {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes flicker_svc {
+    0% { opacity: 1; }      
+    10% { opacity: 0; }     
+    20% { opacity: 1; }     
+    30% { opacity: 0; }     
+    60% { opacity: 1; }     
+    100% { opacity: 1; }    
+}
+
+.banner__title_svc {
+    font-size: 90px;
+    letter-spacing: 5px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    animation: flicker_svc 4.5s 1 forwards;
+    text-shadow: 0 0 10px #e6e6e6, 0 0 20px #000000;
+}
+
+.banner__subtitle_svc {
+    font-size: 30px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner__button_svc {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.banner__button_svc:hover {
+    background-color: #112d4e; 
+    border-color: transparent; 
+}
+
+@media (max-width: 840px) {
+    .banner__title_svc {
+        font-size: 60px;
+        margin-top: 80px;
+    }
+
+    .banner__subtitle_svc {
+        font-size: 15px; 
+    }
+
+    .banner__button_svc {
+        padding: 10px 25px;
+    }
+}
+
+/******** NOSOTROS *********/  
+
+.banner_us {
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: background-image 1.5s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); /* Corte en punta en la parte inferior */
+}
+
+
+
+.banner_us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.banner__content_us {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes flicker_us {
+    0% { opacity: 1; }      
+    10% { opacity: 0; }     
+    20% { opacity: 1; }     
+    30% { opacity: 0; }     
+    60% { opacity: 1; }     
+    100% { opacity: 1; }    
+}
+
+.banner__title_us {
+    font-size: 120px;
+    letter-spacing: 5px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    animation: flicker_us 4.5s 1 forwards;
+    text-shadow: 0 0 10px #002659, 0 0 20px #005c8a;
+}
+
+.banner__subtitle_us {
+    font-size: 30px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner__button_us {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.banner__button_us:hover {
+    background-color: #112d4e; 
+    border-color: transparent; 
+}
+
+@media (max-width: 840px) {
+    .banner__title_us {
+        font-size: 60px;
+        margin-top: 80px;
+    }
+
+    .banner__subtitle_us {
+        font-size: 15px; 
+    }
+
+    .banner__button_us {
+        padding: 10px 25px;
+    }
+}
+
+
+/* CONTACTO */
+
+/******** CONTACTO *********/  
+
+.banner_contact {
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: background-image 1.5s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); /* Corte en punta en la parte inferior */
+}
+
+.banner_contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.banner__content_contact {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes flicker_contact {
+    0% { opacity: 1; }      
+    10% { opacity: 0; }     
+    20% { opacity: 1; }     
+    30% { opacity: 0; }     
+    60% { opacity: 1; }     
+    100% { opacity: 1; }    
+}
+
+.banner__title_contact {
+    font-size: 120px;
+    letter-spacing: 5px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    animation: flicker_contact 4.5s 1 forwards;
+    text-shadow: 0 0 10px #00BFFF, 0 0 20px #00BFFF;
+}
+
+.banner__subtitle_contact {
+    font-size: 30px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner__button_contact {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.banner__button_contact:hover {
+    background-color: #112d4e; 
+    border-color: transparent; 
+}
+
+@media (max-width: 840px) {
+    .banner__title_contact {
+        font-size: 60px;
+        margin-top: 80px;
+    }
+
+    .banner__subtitle_contact {
+        font-size: 15px; 
+    }
+
+    .banner__button_contact {
+        padding: 10px 25px;
+    }
+}
+
+/* SERVICIO 1*/
+
+.banner_svc1 {
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: white; 
+    transition: background-image 1.5s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%); /* Corte en punta en la parte inferior */
+    
+    
+}
+
+.banner_svc1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.banner__content_svc1 {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes flicker_svc1 {
+    0% { opacity: 1; }      
+    10% { opacity: 0; }     
+    20% { opacity: 1; }     
+    30% { opacity: 0; }     
+    60% { opacity: 1; }     
+    100% { opacity: 1; }    
+}
+
+.banner__title_svc1 {
+    font-size: 120px;
+    letter-spacing: 5px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    animation: flicker_svc1 4.5s 1 forwards;
+    text-shadow: 0 0 10px #e6e6e6, 0 0 20px #000000;
+}
+
+.banner__subtitle_svc1 {
+    font-size: 30px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner__button_svc1 {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.banner__button_svc1:hover {
+    background-color: #112d4e; 
+    border-color: transparent; 
+}
+
+@media (max-width: 840px) {
+    .banner__title_svc1 {
+        font-size: 60px;
+        margin-top: 80px;
+    }
+
+    .banner__subtitle_svc1 {
+        font-size: 15px; 
+    }
+
+    .banner__button_svc1 {
+        padding: 10px 25px;
+    }
+}
+

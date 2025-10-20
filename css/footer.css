@@ -1,0 +1,151 @@
+/* Estilo general de la footer */
+.footer {
+    background-color: #152532; 
+    color: #fff;
+    padding-bottom: 25px;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor flexible */
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Estilo de columnas */
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left; 
+    max-width: 250px;
+}
+
+/* Estilo del logo */
+.footer__logo img {
+    max-width: 200px;
+    margin-bottom: 15px;
+    align-self: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    border-radius: 5px; 
+}
+
+.footer__description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: left;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    font-size: 14px;
+}
+
+.footer__list li {
+    margin-bottom: 5px;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #007BFF;
+}
+
+.footer__social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer__social-link {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer__social-link:hover {
+    color: #007BFF;
+}
+
+.footer__payment-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.footer__payment-bcp {
+    width: 55px;
+    height: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.footer__payment-yape {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 25px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 30px;
+        padding-left: 50px;
+        padding-right: 100px;
+    }
+
+    .footer__column {
+        max-width: 100%; 
+        text-align: left; 
+    }
+
+    .footer__social-icons,
+    .footer__payment-icons {
+        justify-content: center; 
+    }
+
+    .footer__logo img {
+        max-width: 150px; 
+    }
+
+    .footer__title {
+        font-size: 16px;
+    }
+
+    .footer__description,
+    .footer__link {
+        font-size: 12px; 
+    }
+}

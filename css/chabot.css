@@ -1,0 +1,93 @@
+/* Contenedor principal */
+.contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse; 
+}
+
+/* Imagen de mensaje (círculo) */
+.message-icon {
+    width: 90px;
+    height: 90px;
+    background-color: #002659;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* Sombra */
+}
+
+.message-icon:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Sombra más amplia y más opaca */
+    transform: scale(0.95); /* Opcional: un ligero aumento de tamaño */
+}
+
+.message-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Opciones de contacto (WhatsApp y Messenger) */
+.contact-options {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-options::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);  
+    border-radius: 10px;
+    z-index: -1; 
+}
+
+/* Estilo de los enlaces */
+.contact-options a {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-options img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Mostrar opciones al hacer clic */
+.contact-btn.open .contact-options {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); 
+    animation: slide-up 0.5s ease-in-out; 
+}
+
+/* Animación de deslizamiento hacia arriba */
+@keyframes slide-up {
+    0% {
+        transform: translateY(20px); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}

@@ -1,0 +1,186 @@
+/* Estilos generales de la sección de servicio */
+.service-detail {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.service-detail__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Imagen: Hacemos que se mueva junto con la descripción */
+.service-detail__image {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+  width: 100%;
+  max-width: 700px;
+  height: 450px;
+  overflow: hidden;
+  transition: top 0.3s ease-out;
+}
+
+.service-detail__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Contenedor de la descripción */
+.service-detail__description {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  text-align: left;
+  transition: transform 0.3s ease-out;
+}
+
+.service-detail__text-container {
+  width: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Título */
+.service-detail__title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Texto principal */
+.service-detail__text {
+  font-size: 1.1rem;
+  color: #226092;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: justify;  /* Justificar texto principal */
+  width: 100%;
+}
+
+/* Lista dentro del texto */
+.service-detail__text ul,
+.service-detail__text ol {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  list-style-position: inside;
+  
+}
+
+/* Asegurando que el texto de cada item de la lista esté justificado */
+.service-detail__text ul li,
+.service-detail__text ol li {
+  padding: 8px 0;
+  margin-bottom: 10px;
+  text-align: justify; /* Justificar cada item de la lista */
+}
+
+/* Media Query para pantallas medianas y pequeñas */
+@media screen and (max-width: 1024px) {
+  .service-detail__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-detail__image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .service-detail__text-container {
+    padding: 0 30px;
+  }
+
+  .service-detail__title {
+    font-size: 1.8rem;
+  }
+
+  .service-detail__text {
+    font-size: 1rem;
+  }
+
+  /* Lista dentro del texto */
+  .service-detail__text ul,
+  .service-detail__text ol {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+
+  /* Elementos de la lista */
+  .service-detail__text ul li,
+  .service-detail__text ol li {
+    padding: 6px 0;
+    margin-bottom: 8px;
+    text-align: justify;
+  }
+}
+
+/* Media Query para pantallas pequeñas (smartphones) */
+@media screen and (max-width: 600px) {
+  .service-detail__container {
+    padding: 0 10px;
+  }
+
+  .service-detail__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .service-detail__text-container {
+    padding: 0 20px;
+    padding-top: 5%;
+  }
+
+  .service-detail__title {
+    font-size: 1.5rem;
+  }
+
+  .service-detail__text {
+    font-size: 0.95rem;
+  }
+
+  /* Lista dentro del texto */
+  .service-detail__text ul,
+  .service-detail__text ol {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
+  }
+
+  /* Elementos de la lista */
+  .service-detail__text ul li,
+  .service-detail__text ol li {
+    padding: 6px 0;
+    margin-bottom: 8px;
+    text-align: justify;
+  }
+}
